@@ -1,0 +1,37 @@
+extends PanelContainer
+
+@onready var text_label: RichTextLabel = $VBox/DialogueText
+@onready var speaker_label: Label = $VBox/SpeakerLabel
+
+var current_text: String = ""
+var current_speaker: String = ""
+var typewriter_speed: float = 0.04
+var typewriter_timer: float = 0.0
+var typewriter_index: int = 0
+var typewriter_active: bool = false
+
+func set_dialogue(speaker: String, text: String) -> void:
+    current_speaker = speaker
+    current_text = text
+    speaker_label.text = speaker
+    text_label.text = ""
+    typewriter_index = 0
+    typewriter_timer = 0.0
+    typewriter_active = true
+
+func _process(delta: float) -> void:
+    if not typewriter_active:
+        return
+    typewriter_timer += delta
+    while typewriter_timer >= typewriter_speed:
+        typewriter_timer -= typewriter_speed
+        if typewriter_index < current_text.length():
+            text_label.text += current_text[typewriter_index]
+            typewriter_index += 1
+        else:
+            typewriter_active = false
+            break
+
+func skip_to_end() -> void:
+    typewriter_active = false
+    text_label.text = current_text

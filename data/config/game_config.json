@@ -1,0 +1,9 @@
+{
+  "points_per_key": 100,
+  "keys_needed_for_secret": 3,
+  "debug_mode": false,
+  "story_points_range": {
+    "min": 15,
+    "max": 25
+  }
+}

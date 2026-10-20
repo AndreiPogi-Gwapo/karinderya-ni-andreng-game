@@ -1,0 +1,414 @@
+{
+  "start_scene": "day_1",
+  "scenes": [
+    {
+      "id": "day_1",
+      "title": "DAY 1 — THE CLASSROOM",
+      "speaker": "Sir Tris",
+      "text": "Andreng, in your Entrepreneurship class, remember this: a business is not just income, it is responsibility. Budget wisely, serve honestly, and plan before you spend.",
+      "choices": [
+        {
+          "text": "Create a realistic plan for the family.",
+          "next": "day_2",
+          "points": 20,
+          "money": 50,
+          "trust": 5,
+          "reputation": 5,
+          "knowledge": 5,
+          "responsibility": 5
+        },
+        {
+          "text": "Say you will do anything to get money fast.",
+          "next": "day_2_bad",
+          "points": 15,
+          "money": 10,
+          "trust": 0,
+          "reputation": -2,
+          "knowledge": 1,
+          "responsibility": -2
+        }
+      ]
+    },
+    {
+      "id": "day_2",
+      "title": "DAY 2 — THE PROBLEM AT HOME",
+      "speaker": "Andreng",
+      "text": "Mang Cruz looks exhausted. 'We're drowning in debt, anak. We need help.' Andreng feels the pressure growing heavier with every unpaid bill.",
+      "choices": [
+        {
+          "text": "Create a family plan and look for honest work.",
+          "next": "day_3_safe",
+          "points": 20,
+          "money": 20,
+          "trust": 8,
+          "reputation": 5,
+          "knowledge": 6,
+          "responsibility": 8
+        },
+        {
+          "text": "Look for a quick way to make money without thinking it through.",
+          "next": "day_3_risky",
+          "points": 15,
+          "money": 10,
+          "trust": -3,
+          "reputation": -2,
+          "knowledge": 2,
+          "responsibility": -4
+        },
+        {
+          "text": "Ignore the problem for now and delay the decision.",
+          "next": "day_3_avoid",
+          "points": 12,
+          "money": 0,
+          "trust": -2,
+          "reputation": -3,
+          "knowledge": 0,
+          "responsibility": -3
+        }
+      ]
+    },
+    {
+      "id": "day_2_bad",
+      "title": "DAY 2 — A TEMPORARY PANIC",
+      "speaker": "Narrator",
+      "text": "Andreng feels the urge to escape the problem, but the debt remains. The pressure pushes him toward a risky idea.",
+      "choices": [
+        {
+          "text": "Move toward the risky money plan.",
+          "next": "day_3_risky",
+          "points": 15,
+          "money": 5,
+          "trust": -2,
+          "reputation": -2,
+          "knowledge": 1,
+          "responsibility": -2
+        }
+      ]
+    },
+    {
+      "id": "day_3_safe",
+      "title": "DAY 3 — ANYAPOT'S OFFER",
+      "speaker": "Anyapot",
+      "text": "Anyapot says, 'I can lend you fifteen thousand for a fresh start, but kailangan mo talagang magplano. Hindi pwedeng gamitan ng sugal ang pera.'",
+      "choices": [
+        {
+          "text": "Save the money and build a business plan first.",
+          "next": "day_4_business",
+          "points": 20,
+          "money": 15000,
+          "trust": 8,
+          "reputation": 6,
+          "knowledge": 6,
+          "responsibility": 8
+        },
+        {
+          "text": "Divide it between savings and business research.",
+          "next": "day_4_business",
+          "points": 18,
+          "money": 15000,
+          "trust": 7,
+          "reputation": 5,
+          "knowledge": 5,
+          "responsibility": 7
+        }
+      ]
+    },
+    {
+      "id": "day_3_risky",
+      "title": "DAY 3 — ANYAPOT'S OFFER",
+      "speaker": "Anyapot",
+      "text": "Anyapot offers a loan and warns him to use it responsibly. Andreng decides to gamble on a risky shortcut.",
+      "choices": [
+        {
+          "text": "Spend the money on a gamble.",
+          "next": "day_4_rainy",
+          "points": 10,
+          "money": -10000,
+          "trust": -8,
+          "reputation": -5,
+          "knowledge": -1,
+          "responsibility": -8
+        }
+      ]
+    },
+    {
+      "id": "day_3_avoid",
+      "title": "DAY 3 — ANYAPOT'S CALL",
+      "speaker": "Anyapot",
+      "text": "Anyapot tells Andreng that although she wants to help, excuses do not solve family problems. He needs a plan, not paralysis.",
+      "choices": [
+        {
+          "text": "Accept a fresh start with a real business plan.",
+          "next": "day_4_business",
+          "points": 18,
+          "money": 5000,
+          "trust": 3,
+          "reputation": 2,
+          "knowledge": 4,
+          "responsibility": 5
+        }
+      ]
+    },
+    {
+      "id": "day_4_rainy",
+      "title": "DAY 4 — THE RAINY STREET",
+      "speaker": "Anyapot",
+      "text": "Rain falls hard. Anyapot finds Andreng soaked and ashamed. He admits he lost the money. She is disappointed but still offers a second chance.",
+      "choices": [
+        {
+          "text": "Accept responsibility and make a budget with her help.",
+          "next": "day_5_budget",
+          "points": 18,
+          "money": 15000,
+          "trust": 6,
+          "reputation": 4,
+          "knowledge": 5,
+          "responsibility": 8
+        },
+        {
+          "text": "Make empty promises without a real plan.",
+          "next": "day_5_budget",
+          "points": 12,
+          "money": 5000,
+          "trust": -2,
+          "reputation": -2,
+          "knowledge": 1,
+          "responsibility": -2
+        }
+      ]
+    },
+    {
+      "id": "day_4_business",
+      "title": "DAY 4 — BUSINESS ADVICE",
+      "speaker": "Anyapot",
+      "text": "Anyapot gives practical advice: start small, manage inventory, set fair prices, and treat customers with respect.",
+      "choices": [
+        {
+          "text": "Use the budget to start FoodLoop.",
+          "next": "day_5_budget",
+          "points": 20,
+          "money": 17000,
+          "trust": 7,
+          "reputation": 5,
+          "knowledge": 7,
+          "responsibility": 7
+        }
+      ]
+    },
+    {
+      "id": "day_5_budget",
+      "title": "DAY 5 — BUILDING FOODLOOP",
+      "speaker": "Narrator",
+      "text": "FoodLoop begins as a small home-based karinderya. Andreng prepares a budget, buys ingredients, and sets a menu with affordable meals.",
+      "choices": [
+        {
+          "text": "Finalize the budget and open the business.",
+          "next": "day_6_customers",
+          "points": 22,
+          "money": 0,
+          "trust": 5,
+          "reputation": 8,
+          "knowledge": 8,
+          "responsibility": 8
+        }
+      ]
+    },
+    {
+      "id": "day_6_customers",
+      "title": "DAY 6 — THE FIRST CUSTOMERS",
+      "speaker": "Customer",
+      "text": "The first customers arrive hungry and hopeful. Success depends on accuracy, speed, and honest pricing.",
+      "choices": [
+        {
+          "text": "Serve orders carefully and build trust.",
+          "next": "day_7_growth",
+          "points": 20,
+          "money": 2500,
+          "trust": 8,
+          "reputation": 6,
+          "knowledge": 6,
+          "responsibility": 7
+        },
+        {
+          "text": "Rush the service and risk complaints.",
+          "next": "day_7_growth",
+          "points": 15,
+          "money": 1000,
+          "trust": -5,
+          "reputation": -4,
+          "knowledge": 2,
+          "responsibility": -3
+        }
+      ]
+    },
+    {
+      "id": "day_7_growth",
+      "title": "DAY 7 — GROWING THE BUSINESS",
+      "speaker": "Sir Tris",
+      "text": "Good businesses grow from profit and discipline. Reinvest wisely, save for emergencies, and treat coworkers and customers with respect.",
+      "choices": [
+        {
+          "text": "Reinvest in better equipment and expand carefully.",
+          "next": "day_8_bullying",
+          "points": 22,
+          "money": 2000,
+          "trust": 6,
+          "reputation": 7,
+          "knowledge": 8,
+          "responsibility": 8
+        }
+      ]
+    },
+    {
+      "id": "day_8_bullying",
+      "title": "DAY 8 — THE BULLYING INCIDENT",
+      "speaker": "Narrator",
+      "text": "Carlong, Franko, and Hirkuliys throw eggs and damage FoodLoop. Andreng is shaken but must choose how to respond.",
+      "choices": [
+        {
+          "text": "Stay calm, document the damage, and seek help.",
+          "next": "day_9_truth",
+          "points": 20,
+          "money": -500,
+          "trust": 5,
+          "reputation": 4,
+          "knowledge": 3,
+          "responsibility": 8
+        },
+        {
+          "text": "Fight back and escalate the conflict.",
+          "next": "day_9_truth",
+          "points": 12,
+          "money": -1000,
+          "trust": -5,
+          "reputation": -6,
+          "knowledge": 0,
+          "responsibility": -4
+        },
+        {
+          "text": "Give up and abandon the business.",
+          "next": "day_9_truth",
+          "points": 10,
+          "money": -1200,
+          "trust": -6,
+          "reputation": -7,
+          "knowledge": -2,
+          "responsibility": -7
+        }
+      ]
+    },
+    {
+      "id": "day_9_truth",
+      "title": "DAY 9 — ANGELINE'S REVEAL",
+      "speaker": "Angeline",
+      "text": "Angeline sees a photograph of Andreng's damaged home and realizes he is her son. She reveals the truth to Anyapot and helps rebuild the family.",
+      "choices": [
+        {
+          "text": "Move forward with honesty and family support.",
+          "next": "day_10_restore",
+          "points": 22,
+          "money": 1000,
+          "trust": 8,
+          "reputation": 4,
+          "knowledge": 4,
+          "responsibility": 8
+        }
+      ]
+    },
+    {
+      "id": "day_10_restore",
+      "title": "DAY 10 — RESTORING FOODLOOP",
+      "speaker": "Narrator",
+      "text": "The family works to restore the business. Mang Cruz speaks of his mistakes and begins taking practical steps to recover.",
+      "choices": [
+        {
+          "text": "Repair FoodLoop carefully and reopen with a stronger plan.",
+          "next": "day_11_beginning",
+          "points": 22,
+          "money": 3000,
+          "trust": 8,
+          "reputation": 7,
+          "knowledge": 7,
+          "responsibility": 9
+        }
+      ]
+    },
+    {
+      "id": "day_11_beginning",
+      "title": "DAY 11 — A NEW BEGINNING",
+      "speaker": "Andreng",
+      "text": "With lessons learned, Andreng reopens FoodLoop and commits to responsibility, fairness, and compassion.",
+      "choices": [
+        {
+          "text": "Continue toward a better future.",
+          "next": "final_city",
+          "points": 25,
+          "money": 5000,
+          "trust": 8,
+          "reputation": 8,
+          "knowledge": 8,
+          "responsibility": 10
+        }
+      ]
+    },
+    {
+      "id": "final_city",
+      "title": "YEARS LATER — THE CITY",
+      "speaker": "Narrator",
+      "text": "Andreng is now a successful chef. He sees Carlong, Franko, and Hirkuliys on the sidewalk. The final question is not about revenge but about character.",
+      "choices": [
+        {
+          "text": "Offer respectful help and encourage them to rebuild their lives.",
+          "next": "ending_good",
+          "points": 25,
+          "money": 2000,
+          "trust": 15,
+          "reputation": 12,
+          "knowledge": 5,
+          "responsibility": 12
+        },
+        {
+          "text": "Humiliate them because of what they did.",
+          "next": "ending_bad",
+          "points": 10,
+          "money": 0,
+          "trust": -10,
+          "reputation": -8,
+          "knowledge": -1,
+          "responsibility": -10
+        },
+        {
+          "text": "Ignore them and keep walking.",
+          "next": "ending_neutral",
+          "points": 15,
+          "money": 0,
+          "trust": -2,
+          "reputation": 0,
+          "knowledge": 0,
+          "responsibility": -2
+        }
+      ]
+    },
+    {
+      "id": "ending_good",
+      "title": "GOOD ENDING — A LIFE REBUILT",
+      "speaker": "Narrator",
+      "text": "Andreng chooses kindness over revenge. He rebuilds the life he once almost lost, supporting his family, healing his friendships, and honoring the lessons of responsibility and mercy. 'Be a buddy, not a bully.'",
+      "choices": []
+    },
+    {
+      "id": "ending_bad",
+      "title": "BAD ENDING — THE COST OF BAD CHOICES",
+      "speaker": "Narrator",
+      "text": "The cycle continues. Andreng is forced to confront the pain his anger and poor decisions caused. The lesson is heavy: mistakes can be costly, but they can still be repaired with honesty and effort.",
+      "choices": []
+    },
+    {
+      "id": "ending_neutral",
+      "title": "NEUTRAL ENDING — STILL LEARNING",
+      "speaker": "Narrator",
+      "text": "FoodLoop survives, but the road is still long. Andreng keeps learning how to balance ambition with responsibility, and small acts of improvement become the foundation for a better future.",
+      "choices": []
+    }
+  ]
+}

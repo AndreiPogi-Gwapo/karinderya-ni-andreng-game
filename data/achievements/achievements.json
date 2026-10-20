@@ -1,0 +1,62 @@
+[
+  {
+    "id": "first_step",
+    "name": "First Step",
+    "description": "Complete Day 1.",
+    "condition": "day_1_complete"
+  },
+  {
+    "id": "budget_beginner",
+    "name": "Budget Beginner",
+    "description": "Create a valid business budget.",
+    "condition": "budget_ready"
+  },
+  {
+    "id": "business_starter",
+    "name": "Business Starter",
+    "description": "Open FoodLoop.",
+    "condition": "business_started"
+  },
+  {
+    "id": "first_customer",
+    "name": "First Customer",
+    "description": "Complete the first customer order.",
+    "condition": "first_customer"
+  },
+  {
+    "id": "customer_favorite",
+    "name": "Customer Favorite",
+    "description": "Reach a high customer satisfaction rating.",
+    "condition": "customer_favorite"
+  },
+  {
+    "id": "smart_investor",
+    "name": "Smart Investor",
+    "description": "Complete a profitable business day.",
+    "condition": "smart_investor"
+  },
+  {
+    "id": "bounce_back",
+    "name": "Bounce Back",
+    "description": "Reopen FoodLoop after the destruction incident.",
+    "condition": "bounce_back"
+  },
+  {
+    "id": "family_matters",
+    "name": "Family Matters",
+    "description": "Complete the family reconciliation storyline.",
+    "condition": "family_matters"
+  },
+  {
+    "id": "entrepreneurs_mindset",
+    "name": "Entrepreneur's Mindset",
+    "description": "Reach a high entrepreneurship knowledge score.",
+    "condition": "entrepreneurs_mindset"
+  },
+  {
+    "id": "be_buddy_not_bully",
+    "name": "Be a Buddy, Not a Bully",
+    "description": "Choose a compassionate response in the final city scene.",
+    "condition": "be_buddy_not_bully"
+  }
+]
